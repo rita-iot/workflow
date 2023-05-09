@@ -19,4 +19,4 @@ jobs:
           docker build -t zdog/php-fpm:${{ github.sha }} .
           docker tag zdog/php-fpm:${{ github.sha }} zdog/php-fpm:latest
       - name: Push Docker image
-        run: docker push myusername/myrepo:latest
+        run: docker push zdog/php-fpm:latest

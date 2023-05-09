@@ -12,6 +12,5 @@ RUN apt-get update \
     && docker-php-ext-install exif \
     && docker-php-ext-install gd \
     && docker-php-ext-install session \
-    && docker-php-ext-install xml \
     && echo "output_buffering = 4096" > /usr/local/etc/php/conf.d/php-fpm.ini \
     && echo "date.timezone = PRC" >> /usr/local/etc/php/conf.d/php-fpm.ini
