@@ -17,6 +17,6 @@ jobs:
       - name: Build and tag Docker image
         run: |
           docker build -t zdog/php-fpm:${{ github.sha }} .
-          docker tag zdog/php-fpm:${{ github.sha }} zdog/php-fpm:latest
+          docker tag zdog/php-fpm:${{ github.sha }} zdog/php-fpm:8.1.3
       - name: Push Docker image
-        run: docker push zdog/php-fpm:latest
+        run: docker push zdog/php-fpm:8.1.3
